@@ -1,14 +1,8 @@
 class Plant
-  attr_accessor :garden, :name
-
-  @@all = []
+  attr_accessor :name, :garden
 
   def initialize(name:)
     @name = name
-    @@all << self
-  end
-
-  def self.all
-    @@all
+    @garden = nil
   end
 end
